@@ -6,17 +6,17 @@ Getting Started with Amazon EC2
 •	Amazon EC2 offers the broadest and deepest compute platform with choice of processor, storage, networking, operating system, and purchase model. 
 Familiarize Yourself with EC2 Instances
 
-STEP 1:Log Into Your AWS Account
+STEP 1: Log Into Your AWS Account
 
 Log into the AWS Management Console and set up your root account. If you don’t already have an account, you will be prompted to create one.
 With the AWS free tier, you can get 750 hours/month of select EC2 instances for free.
 
-STEP 2:Launch Your Instance
+STEP 2: Launch Your Instance
 
 Identify which instance type is best for your workload. For your first instance, we recommend a low cost, general purpose instance type: t2.micro, and Amazon Machine Image (AMI): Amazon Linux 2 AMI, which are both free-tier eligible.
 Open the Amazon EC2 dashboard and choose “Launch Instance” to create your virtual machine.
 
-STEP 3:Configure Your Instance
+STEP 3: Configure Your Instance
 
 Here are some guidelines when setting up your first instance:
 
@@ -28,7 +28,7 @@ Here are some guidelines when setting up your first instance:
 
 * Note: We will use the key pair file (.pem) later.
 
-STEP 4:Connect to Your Instance
+STEP 4: Connect to Your Instance
 
 After launching your instance, you can connect to it and use it the way you'd use a computer sitting in front of you. There are several ways to connect to the console depending on the operating system. We recommend using EC2 Instance Connect, an easy to use browser based client.
 
@@ -38,16 +38,16 @@ After launching your instance, you can connect to it and use it the way you'd us
 
 •	Choose “Connect”. A window opens, and you are connected to your instance.
 
-STEP 5:Terminate Your Instance
+STEP 5: Terminate Your Instance
 
 Amazon EC2 is free to start (learn more), but it is important that you terminate your instances to prevent additional charges. The EC2 instance and the data associated will be deleted.
 
 Select the EC2 instance, choose "Actions", select "Instance State", and "Terminate".
 
-STEP 6:Convert key pair (.pem) in .ppr format using PuTTYgen.
+STEP 6: Convert key pair (.pem) in .ppr format using PuTTYgen.
 
-STEP 7:Connect with your instance using PuTTY and instance public ipv4 address.
+STEP 7: Connect with your instance using PuTTY and instance public ipv4 address.
 
-STEP 8:Type the commands(I have mentioned these in my respository in file named AWS Commands.txt) to redirect instance public ipv4 address to www.yahoo.com .
+STEP 8: Type the commands(I have mentioned these in my respository in file named AWS Commands.txt) to redirect instance public ipv4 address to www.yahoo.com .
 ________________________________________
 

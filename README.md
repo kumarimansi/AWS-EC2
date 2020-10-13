@@ -44,4 +44,4 @@ Amazon EC2 is free to start (learn more), but it is important that you terminate
 
 Select the EC2 instance, choose "Actions", select "Instance State", and "Terminate".
 ________________________________________
- storage, tools that allow your application to scale based on demand, and fault-tolerant workloads for up to 90% off.
+

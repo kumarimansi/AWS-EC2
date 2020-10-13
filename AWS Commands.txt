@@ -1,0 +1,200 @@
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+2 package(s) needed for security, out of 13 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-91-42 ~]$ sudo bash
+[root@ip-172-31-91-42 ec2-user]# yum install httpd* -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.46-1.amzn2 will be installed
+--> Processing Dependency: system-logos-httpd for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: mod_http2 for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.46-1.amzn2.x86_64
+---> Package httpd-devel.x86_64 0:2.4.46-1.amzn2 will be installed
+--> Processing Dependency: apr-util-devel for package: httpd-devel-2.4.46-1.amzn2.x86_64
+--> Processing Dependency: apr-devel for package: httpd-devel-2.4.46-1.amzn2.x86_64
+---> Package httpd-filesystem.noarch 0:2.4.46-1.amzn2 will be installed
+---> Package httpd-manual.noarch 0:2.4.46-1.amzn2 will be installed
+---> Package httpd-tools.x86_64 0:2.4.46-1.amzn2 will be installed
+--> Running transaction check
+---> Package apr.x86_64 0:1.6.3-5.amzn2.0.2 will be installed
+---> Package apr-devel.x86_64 0:1.6.3-5.amzn2.0.2 will be installed
+---> Package apr-util.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Processing Dependency: apr-util-bdb(x86-64) = 1.6.1-5.amzn2.0.2 for package: apr-util-1.6.1-5.amzn2.0.2.x86_64
+---> Package apr-util-devel.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Processing Dependency: openldap-devel(x86-64) for package: apr-util-devel-1.6.1-5.amzn2.0.2.x86_64
+--> Processing Dependency: libdb-devel(x86-64) for package: apr-util-devel-1.6.1-5.amzn2.0.2.x86_64
+--> Processing Dependency: expat-devel(x86-64) for package: apr-util-devel-1.6.1-5.amzn2.0.2.x86_64
+---> Package generic-logos-httpd.noarch 0:18.0.0-4.amzn2 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.amzn2 will be installed
+---> Package mod_http2.x86_64 0:1.15.14-2.amzn2 will be installed
+--> Running transaction check
+---> Package apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+---> Package expat-devel.x86_64 0:2.1.0-10.amzn2.0.2 will be installed
+---> Package libdb-devel.x86_64 0:5.3.21-24.amzn2.0.3 will be installed
+---> Package openldap-devel.x86_64 0:2.4.44-15.amzn2 will be installed
+--> Processing Dependency: cyrus-sasl-devel(x86-64) for package: openldap-devel-2.4.44-15.amzn2.x86_64
+--> Running transaction check
+---> Package cyrus-sasl-devel.x86_64 0:2.1.26-23.amzn2 will be installed
+--> Processing Dependency: cyrus-sasl(x86-64) = 2.1.26-23.amzn2 for package: cyrus-sasl-devel-2.1.26-23.amzn2.x86_64
+--> Running transaction check
+---> Package cyrus-sasl.x86_64 0:2.1.26-23.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch      Version                   Repository     Size
+================================================================================
+Installing:
+ httpd                  x86_64    2.4.46-1.amzn2            amzn2-core    1.3 M
+ httpd-devel            x86_64    2.4.46-1.amzn2            amzn2-core    207 k
+ httpd-filesystem       noarch    2.4.46-1.amzn2            amzn2-core     23 k
+ httpd-manual           noarch    2.4.46-1.amzn2            amzn2-core    2.4 M
+ httpd-tools            x86_64    2.4.46-1.amzn2            amzn2-core     87 k
+Installing for dependencies:
+ apr                    x86_64    1.6.3-5.amzn2.0.2         amzn2-core    118 k
+ apr-devel              x86_64    1.6.3-5.amzn2.0.2         amzn2-core    207 k
+ apr-util               x86_64    1.6.1-5.amzn2.0.2         amzn2-core     99 k
+ apr-util-bdb           x86_64    1.6.1-5.amzn2.0.2         amzn2-core     19 k
+ apr-util-devel         x86_64    1.6.1-5.amzn2.0.2         amzn2-core     81 k
+ cyrus-sasl             x86_64    2.1.26-23.amzn2           amzn2-core     87 k
+ cyrus-sasl-devel       x86_64    2.1.26-23.amzn2           amzn2-core    310 k
+ expat-devel            x86_64    2.1.0-10.amzn2.0.2        amzn2-core     57 k
+ generic-logos-httpd    noarch    18.0.0-4.amzn2            amzn2-core     19 k
+ libdb-devel            x86_64    5.3.21-24.amzn2.0.3       amzn2-core     39 k
+ mailcap                noarch    2.1.41-2.amzn2            amzn2-core     31 k
+ mod_http2              x86_64    1.15.14-2.amzn2           amzn2-core    147 k
+ openldap-devel         x86_64    2.4.44-15.amzn2           amzn2-core    803 k
+
+Transaction Summary
+================================================================================
+Install  5 Packages (+13 Dependent packages)
+
+Total download size: 6.0 M
+Installed size: 19 M
+Downloading packages:
+(1/18): apr-1.6.3-5.amzn2.0.2.x86_64.rpm                   | 118 kB   00:00
+(2/18): apr-devel-1.6.3-5.amzn2.0.2.x86_64.rpm             | 207 kB   00:00
+(3/18): apr-util-1.6.1-5.amzn2.0.2.x86_64.rpm              |  99 kB   00:00
+(4/18): apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64.rpm          |  19 kB   00:00
+(5/18): apr-util-devel-1.6.1-5.amzn2.0.2.x86_64.rpm        |  81 kB   00:00
+(6/18): cyrus-sasl-2.1.26-23.amzn2.x86_64.rpm              |  87 kB   00:00
+(7/18): cyrus-sasl-devel-2.1.26-23.amzn2.x86_64.rpm        | 310 kB   00:00
+(8/18): expat-devel-2.1.0-10.amzn2.0.2.x86_64.rpm          |  57 kB   00:00
+(9/18): generic-logos-httpd-18.0.0-4.amzn2.noarch.rpm      |  19 kB   00:00
+(10/18): httpd-devel-2.4.46-1.amzn2.x86_64.rpm             | 207 kB   00:00
+(11/18): httpd-2.4.46-1.amzn2.x86_64.rpm                   | 1.3 MB   00:00
+(12/18): httpd-filesystem-2.4.46-1.amzn2.noarch.rpm        |  23 kB   00:00
+(13/18): httpd-tools-2.4.46-1.amzn2.x86_64.rpm             |  87 kB   00:00
+(14/18): libdb-devel-5.3.21-24.amzn2.0.3.x86_64.rpm        |  39 kB   00:00
+(15/18): mailcap-2.1.41-2.amzn2.noarch.rpm                 |  31 kB   00:00
+(16/18): mod_http2-1.15.14-2.amzn2.x86_64.rpm              | 147 kB   00:00
+(17/18): openldap-devel-2.4.44-15.amzn2.x86_64.rpm         | 803 kB   00:00
+(18/18): httpd-manual-2.4.46-1.amzn2.noarch.rpm            | 2.4 MB   00:00
+--------------------------------------------------------------------------------
+Total                                               16 MB/s | 6.0 MB  00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : apr-1.6.3-5.amzn2.0.2.x86_64                                1/18
+  Installing : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                       2/18
+  Installing : apr-util-1.6.1-5.amzn2.0.2.x86_64                           3/18
+  Installing : apr-devel-1.6.3-5.amzn2.0.2.x86_64                          4/18
+  Installing : httpd-tools-2.4.46-1.amzn2.x86_64                           5/18
+  Installing : generic-logos-httpd-18.0.0-4.amzn2.noarch                   6/18
+  Installing : cyrus-sasl-2.1.26-23.amzn2.x86_64                           7/18
+  Installing : cyrus-sasl-devel-2.1.26-23.amzn2.x86_64                     8/18
+  Installing : openldap-devel-2.4.44-15.amzn2.x86_64                       9/18
+  Installing : mailcap-2.1.41-2.amzn2.noarch                              10/18
+  Installing : expat-devel-2.1.0-10.amzn2.0.2.x86_64                      11/18
+  Installing : libdb-devel-5.3.21-24.amzn2.0.3.x86_64                     12/18
+  Installing : apr-util-devel-1.6.1-5.amzn2.0.2.x86_64                    13/18
+  Installing : httpd-filesystem-2.4.46-1.amzn2.noarch                     14/18
+  Installing : mod_http2-1.15.14-2.amzn2.x86_64                           15/18
+  Installing : httpd-2.4.46-1.amzn2.x86_64                                16/18
+  Installing : httpd-manual-2.4.46-1.amzn2.noarch                         17/18
+  Installing : httpd-devel-2.4.46-1.amzn2.x86_64                          18/18
+  Verifying  : apr-util-1.6.1-5.amzn2.0.2.x86_64                           1/18
+  Verifying  : httpd-filesystem-2.4.46-1.amzn2.noarch                      2/18
+  Verifying  : libdb-devel-5.3.21-24.amzn2.0.3.x86_64                      3/18
+  Verifying  : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                       4/18
+  Verifying  : expat-devel-2.1.0-10.amzn2.0.2.x86_64                       5/18
+  Verifying  : mailcap-2.1.41-2.amzn2.noarch                               6/18
+  Verifying  : httpd-tools-2.4.46-1.amzn2.x86_64                           7/18
+  Verifying  : cyrus-sasl-2.1.26-23.amzn2.x86_64                           8/18
+  Verifying  : mod_http2-1.15.14-2.amzn2.x86_64                            9/18
+  Verifying  : apr-devel-1.6.3-5.amzn2.0.2.x86_64                         10/18
+  Verifying  : apr-1.6.3-5.amzn2.0.2.x86_64                               11/18
+  Verifying  : httpd-manual-2.4.46-1.amzn2.noarch                         12/18
+  Verifying  : generic-logos-httpd-18.0.0-4.amzn2.noarch                  13/18
+  Verifying  : openldap-devel-2.4.44-15.amzn2.x86_64                      14/18
+  Verifying  : httpd-2.4.46-1.amzn2.x86_64                                15/18
+  Verifying  : apr-util-devel-1.6.1-5.amzn2.0.2.x86_64                    16/18
+  Verifying  : httpd-devel-2.4.46-1.amzn2.x86_64                          17/18
+  Verifying  : cyrus-sasl-devel-2.1.26-23.amzn2.x86_64                    18/18
+
+Installed:
+  httpd.x86_64 0:2.4.46-1.amzn2            httpd-devel.x86_64 0:2.4.46-1.amzn2
+  httpd-filesystem.noarch 0:2.4.46-1.amzn2 httpd-manual.noarch 0:2.4.46-1.amzn2
+  httpd-tools.x86_64 0:2.4.46-1.amzn2
+
+Dependency Installed:
+  apr.x86_64 0:1.6.3-5.amzn2.0.2
+  apr-devel.x86_64 0:1.6.3-5.amzn2.0.2
+  apr-util.x86_64 0:1.6.1-5.amzn2.0.2
+  apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2
+  apr-util-devel.x86_64 0:1.6.1-5.amzn2.0.2
+  cyrus-sasl.x86_64 0:2.1.26-23.amzn2
+  cyrus-sasl-devel.x86_64 0:2.1.26-23.amzn2
+  expat-devel.x86_64 0:2.1.0-10.amzn2.0.2
+  generic-logos-httpd.noarch 0:18.0.0-4.amzn2
+  libdb-devel.x86_64 0:5.3.21-24.amzn2.0.3
+  mailcap.noarch 0:2.1.41-2.amzn2
+  mod_http2.x86_64 0:1.15.14-2.amzn2
+  openldap-devel.x86_64 0:2.4.44-15.amzn2
+
+Complete!
+[root@ip-172-31-91-42 ec2-user]# yum install wget* -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package wget-1.14-18.amzn2.1.x86_64 already installed and latest version
+Nothing to do
+[root@ip-172-31-91-42 ec2-user]# cd /var/www/html/
+[root@ip-172-31-91-42 html]# ls
+[root@ip-172-31-91-42 html]# wget yahoo.com
+--2020-10-13 12:41:26--  http://yahoo.com/
+Resolving yahoo.com (yahoo.com)... 74.6.143.25, 74.6.143.26, 74.6.231.20, ...
+Connecting to yahoo.com (yahoo.com)|74.6.143.25|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://yahoo.com/ [following]
+--2020-10-13 12:41:26--  https://yahoo.com/
+Connecting to yahoo.com (yahoo.com)|74.6.143.25|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.yahoo.com/ [following]
+--2020-10-13 12:41:26--  https://www.yahoo.com/
+Resolving www.yahoo.com (www.yahoo.com)... 74.6.231.20, 74.6.231.21, 74.6.143.25, ...
+Connecting to www.yahoo.com (www.yahoo.com)|74.6.231.20|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.html’
+
+    [  <=>                                  ] 627,173     1.82MB/s   in 0.3s
+
+2020-10-13 12:41:27 (1.82 MB/s) - ‘index.html’ saved [627173]
+
+[root@ip-172-31-91-42 html]# service httpd start
+Redirecting to /bin/systemctl start httpd.service
+[root@ip-172-31-91-42 html]# chkconfig httpd on
+Note: Forwarding request to 'systemctl enable httpd.service'.
+Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+[root@ip-172-31-91-42 html]#

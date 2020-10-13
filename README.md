@@ -43,5 +43,11 @@ STEP 5:Terminate Your Instance
 Amazon EC2 is free to start (learn more), but it is important that you terminate your instances to prevent additional charges. The EC2 instance and the data associated will be deleted.
 
 Select the EC2 instance, choose "Actions", select "Instance State", and "Terminate".
+
+STEP 6:Convert key pair (.pem) in .ppr format using PuTTYgen.
+
+STEP 7:Connect with your instance using PuTTY and instance public ipv4 address.
+
+STEP 8:Type the commands(I have mentioned in my respositary file named AWS Commands.txt) to redirect instance public ipv4 address to www.yahoo.com .
 ________________________________________
 

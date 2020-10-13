@@ -48,6 +48,6 @@ STEP 6:Convert key pair (.pem) in .ppr format using PuTTYgen.
 
 STEP 7:Connect with your instance using PuTTY and instance public ipv4 address.
 
-STEP 8:Type the commands(I have mentioned in my respositary file named AWS Commands.txt) to redirect instance public ipv4 address to www.yahoo.com .
+STEP 8:Type the commands(I have mentioned these in my respository in file named AWS Commands.txt) to redirect instance public ipv4 address to www.yahoo.com .
 ________________________________________
 
